@@ -1,0 +1,817 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    color:white;
+    font-family:'Oxanium', sans-serif;
+    overflow-x:hidden;
+}
+
+/* NAV */
+
+.navbar{
+    border-bottom:2px solid #0088ff;
+    background:#000;
+}
+
+.nav-link{
+    color:white !important;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#ff2a2a !important;
+}
+
+/* HERO */
+
+.hero{
+    min-height:80vh;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+}
+
+/* Humo azul */
+
+.hero::before{
+    content:"";
+    position:absolute;
+
+    top:-15%;
+    left:-18%;
+
+    width:75%;
+    height:130%;
+
+    background:radial-gradient(circle,
+        rgba(0,136,255,.30) 0%,
+        rgba(0,136,255,.18) 30%,
+        rgba(0,136,255,.08) 60%,
+        transparent 100%);
+
+    filter:blur(90px);
+}
+
+/* Humo rojo */
+
+.hero::after{
+    content:"";
+    position:absolute;
+
+    top:-15%;
+    right:-18%;
+
+    width:75%;
+    height:130%;
+
+    background:radial-gradient(circle,
+        rgba(255,35,35,.30) 0%,
+        rgba(255,35,35,.18) 30%,
+        rgba(255,35,35,.08) 60%,
+        transparent 100%);
+
+    filter:blur(90px);
+}
+
+.hero .container{
+    position:relative;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:6rem;
+    font-weight:700;
+    letter-spacing:4px;
+    margin-bottom:20px;
+}
+
+.hero-text{
+    font-size:2rem;
+    max-width:900px;
+    margin:auto;
+    margin-bottom:15px;
+    color:#d8d8d8;
+}
+
+.ubicacion{
+    margin-top:15px;
+    font-size:1.3rem;
+    color:#00aaff;
+}
+
+.btn-limite{
+    margin-top:20px;
+    background:#ff2020;
+    color:white;
+    padding:14px 40px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-limite:hover{
+    background:#0088ff;
+    color:white;
+    transform:translateY(-3px);
+}
+
+/* CARDS */
+
+.features{
+    padding:45px 0 80px;
+}
+
+.feature-card{
+    background:#0b0b0b;
+    border:1px solid #222;
+    border-radius:15px;
+    padding:35px;
+    text-align:center;
+    transition:.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+    border-color:#0088ff;
+    box-shadow:0 0 20px rgba(0,136,255,.4);
+}
+
+.feature-card h3{
+    font-size:3rem;
+}
+
+.feature-card p{
+    margin-top:15px;
+    font-size:1.1rem;
+}
+
+/* UBICACION */
+
+.direccion{
+    padding:80px 0 120px;
+}
+
+.direccion h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.direccion p{
+    font-size:1.5rem;
+    color:#ddd;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .hero-text{
+        font-size:1.3rem;
+    }
+}
+/* REDES */
+
+.social-home{
+
+    margin-top:35px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+}
+
+.social-home span{
+
+    color:#bdbdbd;
+    font-size:1rem;
+    margin-right:8px;
+}
+
+.social-btn{
+
+    width:52px;
+    height:52px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+
+    color:white;
+    font-size:1.4rem;
+
+    background:#111;
+
+    border:1px solid #2a2a2a;
+
+    transition:.35s;
+}
+
+.social-btn:hover{
+
+    transform:translateY(-6px) scale(1.08);
+}
+
+/* Instagram */
+
+.instagram:hover{
+
+    border-color:#ff2a2a;
+
+    box-shadow:0 0 18px rgba(255,42,42,.45);
+}
+
+/* TikTok */
+
+.tiktok:hover{
+
+    border-color:#00b7ff;
+
+    box-shadow:0 0 18px rgba(0,183,255,.45);
+}
+
+/* WhatsApp */
+
+.whatsapp:hover{
+
+    border-color:#25D366;
+
+    box-shadow:0 0 18px rgba(37,211,102,.45);
+}
+.logo{
+    height:110px;
+    width:auto;
+    display:block;
+    transition:.3s;
+}
+
+.logo:hover{
+    transform:scale(1.03);
+}
+
+
+
+
+
+/*==================================================
+                CONTACTO
+==================================================*/
+
+.contact-box{
+
+    max-width:700px;
+
+    margin:50px auto 0;
+
+    padding:45px;
+
+    background:#0b0b0b;
+
+    border:1px solid #222;
+
+    border-radius:18px;
+
+    transition:.35s;
+
+}
+
+.contact-box:hover{
+
+    border-color:#0088ff;
+
+    box-shadow:0 0 25px rgba(0,136,255,.35);
+
+}
+
+.contact-item{
+
+    text-align:center;
+
+}
+
+.contact-item i{
+
+    font-size:2.3rem;
+
+    color:#00aaff;
+
+    margin-bottom:18px;
+
+}
+
+.contact-item h3{
+
+    color:white;
+
+    font-size:1.7rem;
+
+    margin-bottom:15px;
+
+    font-weight:600;
+
+}
+
+.contact-item p{
+
+    color:#d8d8d8;
+
+    font-size:1.15rem;
+
+    line-height:1.8;
+
+}
+
+.contact-box hr{
+
+    margin:35px 0;
+
+    border-color:#2c2c2c;
+
+}
+
+
+/*==================================================
+            BOTÓN WHATSAPP
+==================================================*/
+
+.btn-whatsapp{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-top:45px;
+
+    padding:18px 38px;
+
+    background:#25D366;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    font-size:1.15rem;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.btn-whatsapp:hover{
+
+    background:#1ebe5d;
+
+    color:white;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 0 25px rgba(37,211,102,.45);
+
+}
+
+.btn-whatsapp i{
+
+    font-size:1.5rem;
+
+}
+
+
+/*==================================================
+                REDES SOCIALES
+==================================================*/
+
+.social-home{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:22px;
+
+    margin-top:60px;
+
+    padding-bottom:110px;
+
+}
+
+.social-btn{
+
+    width:68px;
+
+    height:68px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#111;
+
+    border:2px solid #2b2b2b;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:1.8rem;
+
+    transition:.35s;
+
+}
+
+.social-btn:hover{
+
+    transform:translateY(-6px);
+
+    color:#00aaff;
+
+    border-color:#0088ff;
+
+    box-shadow:0 0 22px rgba(0,136,255,.45);
+
+}
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:768px){
+
+    .contact-box{
+
+        padding:30px 22px;
+
+    }
+
+    .contact-item h3{
+
+        font-size:1.4rem;
+
+    }
+
+    .contact-item p{
+
+        font-size:1rem;
+
+    }
+
+    .btn-whatsapp{
+
+        width:100%;
+
+        justify-content:center;
+
+        padding:16px;
+
+        font-size:1rem;
+
+    }
+
+    .social-home{
+
+        gap:15px;
+
+    }
+
+    .social-btn{
+
+        width:58px;
+
+        height:58px;
+
+        font-size:1.5rem;
+
+    }
+
+}
+
+/*==================================================
+            PLANES Y PRECIOS
+==================================================*/
+
+.precio{
+
+    margin:25px 0;
+
+    font-size:2.3rem;
+
+    font-weight:700;
+
+    color:#00aaff;
+
+}
+
+
+/* TITULO CUMPLE */
+
+.cumple-title{
+
+    font-size:3.2rem;
+
+    font-weight:700;
+
+    color:#fff;
+
+    margin-bottom:20px;
+
+    letter-spacing:2px;
+
+}
+
+
+/* TARJETAS DE CUMPLE */
+
+.cumple-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border:2px solid rgba(255,60,60,.25);
+
+}
+
+.cumple-card:hover{
+
+    border-color:#ff2b2b;
+
+    box-shadow:0 0 30px rgba(255,40,40,.35);
+
+}
+
+
+/* DESTACADO */
+
+.destacado{
+
+    transform:scale(1.04);
+
+    border:2px solid #ffd54a !important;
+
+    box-shadow:0 0 30px rgba(255,213,74,.30);
+
+}
+
+.destacado:hover{
+
+    transform:scale(1.06);
+
+}
+
+
+/* ETIQUETA */
+
+.badge-cumple{
+
+    position:absolute;
+
+    top:18px;
+
+    right:-45px;
+
+    width:180px;
+
+    text-align:center;
+
+    padding:8px 0;
+
+    background:#ff2b2b;
+
+    color:white;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    transform:rotate(35deg);
+
+}
+
+
+/* LISTA */
+
+.incluye{
+
+    margin:30px 0;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    background:#121212;
+
+    border:1px solid #252525;
+
+}
+
+.incluye h5{
+
+    margin-bottom:18px;
+
+    color:#00aaff;
+
+    font-weight:600;
+
+}
+
+.incluye ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.incluye li{
+
+    margin:12px 0;
+
+    color:#d8d8d8;
+
+    font-size:1.05rem;
+
+}
+
+
+/* BOTONES */
+
+.feature-card .btn{
+
+    width:100%;
+
+    margin-top:10px;
+
+}
+
+
+/* ESPACIADO */
+
+.features{
+
+    padding-top:40px;
+
+    padding-bottom:120px;
+
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+    .destacado{
+
+        transform:none;
+
+    }
+
+    .destacado:hover{
+
+        transform:translateY(-8px);
+
+    }
+
+    .cumple-title{
+
+        font-size:2.3rem;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .precio{
+
+        font-size:2rem;
+
+    }
+
+    .badge-cumple{
+
+        right:-55px;
+
+        font-size:.75rem;
+
+    }
+
+    .incluye{
+
+        padding:18px;
+
+    }
+
+}
+
+/*=====================================
+            HORARIOS
+=====================================*/
+
+.horario-card{
+
+    min-height:380px;
+
+}
+
+.horario-card h2{
+
+    margin-bottom:30px;
+
+    color:#00aaff;
+
+    font-weight:600;
+
+}
+
+.horario-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.horario-card li{
+
+    padding:14px 0;
+
+    border-bottom:1px solid #222;
+
+    color:#d8d8d8;
+
+    font-size:1.1rem;
+
+}
+
+.horario-card li:last-child{
+
+    border:none;
+
+}
+
+.vacaciones{
+
+    border:2px solid rgba(255,70,70,.35);
+
+}
+
+.vacaciones:hover{
+
+    border-color:#ff3b3b;
+
+}
+
+.eventos-card{
+
+    margin-top:20px;
+
+    padding:45px;
+
+}
+
+.eventos-card h2{
+
+    margin-bottom:20px;
+
+    color:#00aaff;
+
+}
+
+.eventos-card p{
+
+    font-size:1.2rem;
+
+    color:#d8d8d8;
+
+    margin-bottom:35px;
+
+}
