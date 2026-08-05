@@ -515,217 +515,165 @@ body{
 ==================================================*/
 
 .precio{
-
-    margin:25px 0;
-
-    font-size:2.3rem;
-
-    font-weight:700;
-
-    color:#00aaff;
-
+    margin:30px 0;
+    font-size:2.8rem;
+    font-weight:800;
+    color:#00c8ff;
+    text-shadow:0 0 18px rgba(0,200,255,.35);
 }
 
 
 /* TITULO CUMPLE */
 
 .cumple-title{
-
     font-size:3.2rem;
-
     font-weight:700;
-
     color:#fff;
-
     margin-bottom:20px;
-
     letter-spacing:2px;
-
 }
 
 
 /* TARJETAS DE CUMPLE */
 
 .cumple-card{
-
     position:relative;
-
     overflow:hidden;
-
     border:2px solid rgba(255,60,60,.25);
-
+    border-radius:18px;
+    background:linear-gradient(180deg,#181818,#111);
+    transition:all .35s ease;
 }
 
 .cumple-card:hover{
-
+    transform:translateY(-12px);
     border-color:#ff2b2b;
+    box-shadow:0 18px 40px rgba(255,40,40,.30);
+}
 
-    box-shadow:0 0 30px rgba(255,40,40,.35);
+.cumple-card h2{
+    font-size:2rem;
+    font-weight:700;
+    margin-bottom:12px;
+}
 
+.cumple-card p{
+    font-size:1.15rem;
+    color:#d8d8d8;
 }
 
 
 /* DESTACADO */
 
 .destacado{
-
-    transform:scale(1.04);
-
     border:2px solid #ffd54a !important;
-
-    box-shadow:0 0 30px rgba(255,213,74,.30);
-
+    background:linear-gradient(180deg,#1d1d1d,#101010);
+    box-shadow:0 0 35px rgba(255,213,74,.35);
 }
 
 .destacado:hover{
-
-    transform:scale(1.06);
-
+    transform:translateY(-12px);
+    border-color:#ffd54a !important;
+    box-shadow:0 20px 45px rgba(255,213,74,.40);
 }
 
 
 /* ETIQUETA */
 
 .badge-cumple{
-
     position:absolute;
-
     top:18px;
-
     right:-45px;
-
     width:180px;
-
     text-align:center;
-
     padding:8px 0;
-
     background:#ff2b2b;
-
-    color:white;
-
+    color:#fff;
     font-size:.85rem;
-
     font-weight:600;
-
     transform:rotate(35deg);
-
 }
 
 
 /* LISTA */
 
 .incluye{
-
     margin:30px 0;
-
-    padding:20px;
-
-    border-radius:12px;
-
-    background:#121212;
-
-    border:1px solid #252525;
-
+    padding:22px;
+    border-radius:14px;
+    background:#161616;
+    border:1px solid #2a2a2a;
 }
 
 .incluye h5{
-
     margin-bottom:18px;
-
-    color:#00aaff;
-
-    font-weight:600;
-
+    color:#00c8ff;
+    font-weight:700;
 }
 
 .incluye ul{
-
     list-style:none;
-
     padding:0;
-
     margin:0;
-
 }
 
 .incluye li{
-
-    margin:12px 0;
-
-    color:#d8d8d8;
-
+    margin:14px 0;
+    color:#ececec;
     font-size:1.05rem;
-
 }
 
 
-/* BOTONES */
+/* BOTÓN */
 
 .feature-card .btn{
-
     width:100%;
-
-    margin-top:10px;
-
+    margin-top:15px;
+    padding:15px;
+    font-size:1rem;
+    font-weight:700;
 }
 
 
 /* ESPACIADO */
 
 .features{
-
     padding-top:40px;
-
     padding-bottom:120px;
-
 }
 
 
 /* RESPONSIVE */
 
-@media(max-width:992px){
+@media (max-width:992px){
 
-    .destacado{
-
-        transform:none;
-
+    .cumple-title{
+        font-size:2.4rem;
     }
 
     .destacado:hover{
-
         transform:translateY(-8px);
-
-    }
-
-    .cumple-title{
-
-        font-size:2.3rem;
-
     }
 
 }
 
-@media(max-width:768px){
+@media (max-width:768px){
 
     .precio{
+        font-size:2.2rem;
+    }
 
-        font-size:2rem;
-
+    .cumple-card h2{
+        font-size:1.8rem;
     }
 
     .badge-cumple{
-
         right:-55px;
-
         font-size:.75rem;
-
     }
 
     .incluye{
-
         padding:18px;
-
     }
 
 }
